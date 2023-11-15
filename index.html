@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MY NEWSFEED</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <section class="containerone">
+      <div class="logo-head">
+        <img
+          class="logo"
+          src="https://notion-emojis.s3-us-west-2.amazonaws.com/prod/svg-twitter/1f304.svg"
+          alt="Logo" />
+        <h1 class="heading"><b>MY NEWSFEED</b></h1>
+      </div>
+      <div class="load-feed">
+        <div class="feed">MY NEWSFEED</div>
+        <div class="loadbtns">
+          <button class="load btn">
+            <a href="#cont2" style="color: black" onclick="savedfunc()"
+              >LOAD SAVED NEWS</a
+            >
+          </button>
+          <button class="load btn">
+            <a style="color: black" href="#cont3" onclick="newnewsfunc()"
+              >LOAD NEW NEWS</a
+            >
+          </button>
+        </div>
+      </div>
+      <div class="get-stay">
+        <p class="get"><b>GET LATEST NEWS</b></p>
+        <p class="stay">STAY UPDATED</p>
+      </div>
+    </section>
+    <section class="containertwo" id="cont2">
+      <div class="buttons-2">
+        <button class="newsfeedbtn-2 newsfeed btn">MY NEWSFEED</button>
+        <button class="savedbtn-2 btn">SAVED NEWS</button>
+      </div>
+      <div class="newsdivparent newsdiv-2">
+        <div class="newsdiv">
+          <div class="name-category">
+            <p class="name">BY: <b class="nametext">NAME</b></p>
+            <p class="category">CATEGORY: <b class="category-text">HATKE</b></p>
+          </div>
+          <div>
+            <span class="content"
+              >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Consectetur iure nulla porro quod eius magnam velit animi,
+              inventore iusto quis doloribus eaque deserunt, ut delectus.</span
+            >
+            <button class="readmore">
+              <a class="ancread" target="_blank">READ MORE</a>
+            </button>
+          </div>
+          <div class="icon">
+            <i
+              id="world"
+              class="fa-sharp fa-regular fa-heart fa-2xl fav-icon"></i>
+          </div>
+        </div>
+        <div class="newsdiv">
+          <div class="name-category">
+            <p class="name">BY: <b class="nametext">NAME</b></p>
+            <p class="category">CATEGORY: <b class="category-text">HATKE</b></p>
+          </div>
+          <div>
+            <span class="content"
+              >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Consectetur iure nulla porro quod eius magnam velit animi,
+              inventore iusto quis doloribus eaque deserunt, ut delectus.</span
+            >
+            <button class="readmore">
+              <a class="ancread" target="_blank">READ MORE</a>
+            </button>
+          </div>
+          <div class="icon">
+            <i
+              id="politics"
+              class="fa-sharp fa-regular fa-heart fa-2xl fav-icon"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="containerthree" id="cont3">
+      <div class="main-button-3">
+        <div class="buttons-3">
+          <button class="newsfeedbtn-3 newsfeed btn">MY NEWSFEED</button>
+          <button class="newnewsbtn-3 btn">NEW NEWS</button>
+        </div>
+        <div class="select-all">
+          <p class="selectcategory btn">SELECT CATEGORY</p>
+          <button class="btn allbtn" value="all">ALL</button>
+        </div>
+
+        <div class="selectbuttons display">
+          <button class="btn btnselect" value="business">BUSSINESS</button>
+          <button class="btn btnselect" value="sports">SPORTS</button>
+          <button class="btn btnselect" value="world">WORLD</button>
+          <button class="btn btnselect" value="politics">POLICTICAL</button>
+          <button class="btn btnselect" value="science">SCIENCE</button>
+          <button class="btn btnselect" value="hatke">HATKE</button>
+        </div>
+      </div>
+
+      <div class="newsdivparent newsdiv3">
+        <div class="newsdiv">
+          <div class="name-category">
+            <p class="name">BY: <b class="nametext">Raghav RaJ</b></p>
+            <p class="category">CATEGORY: <b class="category-text">HATKE</b></p>
+          </div>
+          <div>
+            <span class="content"
+              >A Fisherman in US' Marine caught a rare wolf Fish and shared a
+              video of himself with the Fish on Instagram.</span
+            >
+            <button class="readmore">
+              <a class="ancread" target="_blank">READ MORE</a>
+            </button>
+          </div>
+          <div class="icon">
+            <i
+              id="sports"
+              class="fa-sharp fa-regular fa-heart fa-2xl fav-icon"></i>
+          </div>
+        </div>
+        <div class="newsdiv">
+          <div class="name-category">
+            <p class="name">BY: <b class="nametext">RAGHU PINK</b></p>
+            <p class="category">
+              CATEGORY: <b class="category-text">SOCIAL MEDIA</b>
+            </p>
+          </div>
+          <div>
+            <span class="content"
+              >A picture has gone viral on social media showing a woman carrying
+              a' Flat(mates) required placard at a LuckyAli concert in
+              Bengaluru.
+            </span>
+            <button class="readmore">
+              <a class="ancread" target="_blank">READ MORE</a>
+            </button>
+          </div>
+          <div class="icon">
+            <i
+              id="hatke"
+              class="fa-sharp fa-regular fa-heart fa-2xl fav-icon"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://kit.fontawesome.com/68129f478c.js"
+      crossorigin="anonymous"></script>
+    <script src="./App.js"></script>
+  </body>
+</html>

@@ -1,0 +1,448 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  .containerone,
+  .containertwo,
+  .containerthree {
+    height: 100vh;
+    transition: 0.5s ease-in;
+  }
+  body {
+    min-width: 400px;
+  }
+  .logo {
+    width: 60px;
+    height: 60px;
+    margin-left: 5px;
+    margin-top: 3px;
+  }
+  .logo-head {
+    display: flex;
+    justify-content: flex-start;
+    gap: 12px;
+  }
+  .heading {
+    margin-top: 7px;
+    font-size: 50px;
+  }
+  .load-feed {
+    width: 80%;
+    height: 40%;
+    background-color: rgb(23, 22, 22);
+    text-align: center;
+    border-radius: 20px;
+    margin: 50px 180px 40px 180px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .btn {
+    background-color: rgb(199, 247, 104);
+    width: 100px;
+    height: 30px;
+    border-radius: 11px;
+    border: none;
+    outline: none;
+    color: black;
+  }
+  btn:active {
+    background-color: white;
+  }
+  .feed {
+    background-color: white;
+    color: black;
+    width: 500px;
+    height: 80px;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 14px;
+  }
+  .loadbtns {
+    display: flex;
+    gap: 250px;
+  }
+  .load {
+    width: 350px;
+    height: 70px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .get-stay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  .get {
+    font-weight: bold;
+    font-size: 70px;
+  }
+  .stay {
+    font-size: 100px;
+    -webkit-text-stroke: 3px black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+  }
+  .buttons-2 {
+    background-color: rgb(23, 22, 22);
+    display: flex;
+    width: 1400px;
+    border-radius: 20px;
+    justify-content: flex-start;
+    height: 70px;
+    margin-left: 50px;
+    padding-left: 20px;
+    gap: 20px;
+  }
+  .newsfeedbtn-2,
+  .savedbtn-2 {
+    width: 200px;
+    height: 50px;
+    margin-top: 9px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .btn:hover {
+    background-color: white;
+    transform: scale(1.02);
+  }
+  .newsdivparent {
+    max-width: 1350px;
+    margin-top: 30px;
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .newsdiv {
+    height: 250px;
+    border: 1.8px solid black;
+    outline: none;
+    background-color: lightgray;
+    border-radius: 25px;
+    margin-bottom: 15px;
+    padding: 15px;
+  }
+  .name-category {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+  }
+  .name,
+  .category {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  a {
+    text-decoration: none;
+  }
+  .content {
+    font-size: 40px;
+  }
+  .readmore {
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    color: rgb(50, 50, 236);
+    font-weight: bold;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .icon {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 8px;
+    height: 25px;
+  }
+  .main-button-3 {
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    background-color: rgb(23, 22, 22);
+    width: 1400px;
+    border-radius: 20px;
+    justify-content: space-around;
+    padding: 10px;
+    margin-left: 50px;
+  }
+  .select-all {
+    display: flex;
+  }
+  .newsfeedbtn-3,
+  .newnewsbtn-3 {
+    width: 200px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 7px;
+  }
+  .btnselect {
+    width: 150px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 3px;
+  }
+  .display {
+    display: none;
+  }
+  .selectcategory {
+    width: 220px;
+    font-size: 20px;
+    height: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+  }
+  .allbtn {
+    width: 150px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 8px;
+  }
+  .dsiplay {
+    display: none;
+  }
+  @media screen and (max-width: 1300px) {
+    .buttons-2,
+    .main-button-3 {
+      width: 1150px;
+      margin-left: 30px;
+    }
+    .newsdivparent {
+      width: 1150px;
+      margin-left: 40px;
+    }
+  }
+  @media screen and (max-width: 1220px) {
+    .load-feed {
+      width: 75%;
+      margin: 50px 180px 40px 130px;
+    }
+    .load {
+      width: 280px;
+      font-size: 22px;
+    }
+    .loadbtns {
+      gap: 100px;
+    }
+    .buttons-2,
+    .main-button-3 {
+      width: 92%;
+      margin-left: 50px;
+    }
+    .newsdivparent {
+      width: 90%;
+      margin-left: 55px;
+    }
+  }
+  @media screen and (max-width: 1100px) {
+    .btnselect {
+      width: 118px;
+      font-size: 17px;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .load-feed {
+      width: 80%;
+      margin: 50px auto;
+    }
+    .load {
+      width: 250px;
+      font-size: 22px;
+    }
+    .loadbtns {
+      gap: 40px;
+    }
+    .get {
+      font-weight: bold;
+      font-size: 60px;
+    }
+    .stay {
+      font-size: 85px;
+    }
+    .buttons-2,
+    .main-button-3 {
+      width: 92%;
+      margin-left: 40px;
+    }
+    .newsdivparent {
+      width: 90%;
+      margin-left: 45px;
+    }
+  }
+  @media screen and (max-width: 850px) {
+    .btnselect {
+      width: 100px;
+      font-size: 15px;
+      gap: 8px;
+    }
+    .main-button-3 {
+      height: 220px;
+    }
+    .name,
+    .category {
+      font-size: 23px;
+    }
+    .content {
+      font-size: 35px;
+    }
+  }
+  @media screen and (max-width: 720px) {
+    .load-feed {
+      width: 80%;
+      margin: 50px auto;
+    }
+    .loadbtns {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .load {
+      width: 350px;
+      font-size: 30px;
+    }
+    .btnselect {
+      margin-top: 3px;
+    }
+  }
+  @media screen and (max-width: 660px) {
+    .load {
+      width: 350px;
+      font-size: 27px;
+    }
+    .feed {
+      width: 385px;
+      height: 80px;
+      font-size: 45px;
+    }
+    .get {
+      font-weight: bold;
+      font-size: 45px;
+    }
+    .stay {
+      font-size: 67px;
+    }
+    .name,
+    .category {
+      font-size: 20px;
+    }
+    .content {
+      font-size: 30px;
+    }
+    .readmore {
+      font-size: 30px;
+    }
+    .buttons-2,
+    .main-button-3 {
+      width: 92%;
+      margin-left: 25px;
+    }
+    .newsdivparent {
+      width: 90%;
+      margin-left: 30px;
+    }
+  }
+  @media screen and (max-width: 520px) {
+    .load {
+      width: 300px;
+      font-size: 25px;
+    }
+    .feed {
+      width: 320px;
+      height: 80px;
+      font-size: 28px;
+    }
+    .heading {
+      margin-top: 7px;
+      font-size: 35px;
+    }
+    .get {
+      font-weight: bold;
+      font-size: 35px;
+    }
+    .stay {
+      font-size: 55px;
+    }
+    .content {
+      font-size: 28px;
+    }
+    .category {
+      font-size: 23px;
+    }
+    .name {
+      display: none;
+    }
+    .readmore {
+      font-size: 20px;
+    }
+    .newsfeedbtn-2,
+    .savedbtn-2,
+    .newsfeedbtn-3,
+    .selectcategory {
+      width: 150px;
+      font-size: 18px;
+    }
+    .allbtn {
+      width: 45px;
+      font-size: 17px;
+    }
+    .newnewsbtn-3 {
+      width: 130px;
+    }
+    .select-all {
+      gap: 8px;
+    }
+    .selectcategory {
+      width: 230px;
+      margin-top: 3px;
+    }
+    .buttons-2 {
+      width: 92%;
+      margin-left: 10px;
+    }
+    .main-button-3 {
+      width: 92%;
+      height: 230px;
+      margin-top: 15px;
+      margin-left: 10px;
+    }
+    .newsdivparent {
+      width: 90%;
+      margin-left: 15px;
+    }
+  }
+  @media screen and (max-width: 430px) {
+    .get {
+      font-weight: bold;
+      font-size: 35px;
+      height: 50px;
+    }
+    .stay {
+      font-size: 50px;
+    }
+    .get-stay {
+      gap: 70px;
+    }
+  }
+  @media screen and (max-width: 410px) {
+    .feed {
+      width: 290px;
+      height: 80px;
+      font-size: 26px;
+    }
+    .load {
+      width: 280px;
+      font-size: 23px;
+    }
+  }
